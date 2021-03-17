@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+
+.eltdf-image-with-info-holder {
+    @include eltdfRelativeHolderLayout();
+	
+	&.eltdf-has-shadow {
+		
+		.eltdf-iwi-image {
+			box-shadow: $default-box-shadow;
+		}
+	}
+	
+	.eltdf-iwi-image {
+		@include eltdfRelativeHolderLayout();
+		
+		img {
+			position: relative;
+			display: block;
+		}
+	}
+	
+	.eltdf-iwi-info-holder {
+		position: absolute;
+	    top: 50%;
+	    left: -100px;
+	    @include eltdfTransform(translateY(-50%));
+	}
+	
+	.eltdf-iwi-title {
+		margin: 0;
+		position: absolute;
+		left: 50%;
+		@include eltdfTransform(translate(-50%,-50%));
+		top: 50%;
+		margin-top: -6px;
+	}
+
+	&.eltdf-title-top {
+		.eltdf-iwi-info-holder {
+			position: absolute;
+		    top: -35px;
+		    left: 50%;
+		    @include eltdfTransform(translateX(-50%));
+		}
+	}
+
+	&.eltdf-title-right {
+		.eltdf-iwi-info-holder {
+		    right: -100px;
+		    left: auto;
+		    @include eltdfTransform(translateY(-50%));
+		}
+	}
+
+	&.eltdf-title-bottom {
+		.eltdf-iwi-info-holder {
+			bottom: -35px;
+		    left: 50%;
+		    top: auto;
+		    @include eltdfTransform(translateX(-50%));
+		}
+	}
+}
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */

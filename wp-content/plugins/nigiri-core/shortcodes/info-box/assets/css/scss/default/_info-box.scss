@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Info Box shortcode style - begin
+   ========================================================================== */
+
+.eltdf-info-box-holder {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+	text-align: center;
+	width: auto;
+	background: #fff;
+    padding: 3% 8.5% 4%;
+    box-sizing: border-box;
+	
+	&.eltdf-appear-animation {
+		
+		&.eltdf-ib-appear {
+			opacity: 1;
+			@include eltdfTransform(translateY(0));
+		}
+		
+		opacity: 0;
+		@include eltdfTransform(translateY(20px));
+		@include eltdfTransitionTransform(.8s ease .15s, opacity .8s ease .15s);
+	}
+	
+	.eltdf-ib-image {
+		position: relative;
+	    display: block;
+	    vertical-align: middle;
+		text-align: center;
+		width: auto;
+		
+		img {
+			position: relative;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	.eltdf-ib-signature-image {
+		position: relative;
+	    display: block;
+	    vertical-align: middle;
+		text-align: center;
+		width: auto;
+		top: -10px;
+		
+		img {
+			position: relative;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	
+	.eltdf-ib-text-holder {
+		position: relative;
+	    display: block;
+	    vertical-align: middle;
+		text-align: center;
+		width: auto;
+		margin: 18px 0 0;
+	}
+	
+	.eltdf-ib-title {
+		margin: 0;
+		line-height: 1em;
+	}
+	
+	.eltdf-ib-subtitle {
+		margin: 0 0 5px;
+		line-height: 1em;
+	}
+
+	.eltdf-ib-button {
+		margin: 10px 0 0;
+	}
+	
+}
+/* ==========================================================================
+   Info Box shortcode style - end
+   ========================================================================== */

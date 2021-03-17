@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Custom Font shortcode style - begin
+   ========================================================================== */
+
+.eltdf-opening-hours-holder {
+	@include eltdfRelativeHolderLayout();
+	margin-bottom: 23px;
+
+	&:last-child {
+		margin-bottom:0;
+	}
+
+	.eltdf-opening-hours-holder-inner {
+		display: table;
+		width: 100%;
+		line-height: 1em;
+
+		> * {
+			display: table-cell;
+			white-space: nowrap;
+			box-sizing: border-box;
+		}
+
+		.eltdf-opening-hours-line {
+			width: 98%;
+			border-bottom: 2px dotted $default-text-color;
+		}
+
+		.eltdf-opening-hours-day-holder,
+		.eltdf-opening-hours-time {
+			width: 1%;
+		}
+
+		.eltdf-opening-hours-day-holder {
+			font-family: $default-text-font;
+			font-size: 15px;
+			text-transform: capitalize;
+
+			.eltdf-opening-hours-day {
+				display: inline-block;
+			}
+		}
+
+		.eltdf-opening-hours-time {
+			font-family: $default-text-font;
+			font-size: 15px;
+			text-transform: capitalize;
+			padding-left: 3px;
+			min-width: 100px;
+		}
+	}
+}
+/* ==========================================================================
+   Custom Font shortcode style - end
+   ========================================================================== */

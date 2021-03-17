@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Socialsidebar styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+# Social and Contact sticky sidebar style - begin
+========================================================================== */
+.eltdf-social-sidebar-holder {
+  position: fixed;
+  top: 0;
+  width: 8.3%;
+  height: 100%;
+  z-index: 109;
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-social-sidebar-holder {
+    display: none;
+  }
+}
+
+.eltdf-social-sidebar-holder.eltdf-social-sidebar {
+  left: 0;
+}
+
+.eltdf-social-sidebar-holder.eltdf-contact-sidebar {
+  right: 0;
+}
+
+.eltdf-social-sidebar-holder .eltdf-ss-inner {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 13px);
+  width: 100%;
+  display: table;
+  line-height: 26px;
+  white-space: nowrap;
+  -webkit-transform: rotate(-90deg) translate3d(-49%, 0, 0);
+  -moz-transform: rotate(-90deg) translate3d(-49%, 0, 0);
+  transform: rotate(-90deg) translate3d(-49%, 0, 0);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.eltdf-social-sidebar-holder .eltdf-ss-inner > * {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0 10px;
+  font-family: "Bebas";
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: #b0b0b0;
+  white-space: nowrap;
+}
+
+.eltdf-social-sidebar-holder a:hover {
+  color: #111111;
+}
+
+/* ==========================================================================
+# Social and Contact sticky sidebar style - end
+========================================================================== */
+/* ==========================================================================
+   Socialsidebar styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=socialsidebar-map.css.map */

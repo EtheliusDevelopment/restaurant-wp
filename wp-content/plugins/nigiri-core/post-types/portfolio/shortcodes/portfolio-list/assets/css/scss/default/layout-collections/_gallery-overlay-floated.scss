@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay Floated style - begin
+   ========================================================================== */
+
+.eltdf-portfolio-list-holder {
+
+	&.eltdf-pl-gallery-overlay-floated {
+
+		.eltdf-pli-text-holder {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			@include eltdfTransform(translateY(-50%));
+			width: 92%;
+			padding: 26px 36px;
+			background-color: #213f41;
+			opacity: 0;
+			text-align: left;
+			box-sizing: border-box;
+			@include eltdfTransition(opacity .2s ease-in-out);
+		}
+	}
+}
+
+.eltdf-pl-follow-info-holder {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	height: auto;
+	opacity: 0;
+	z-index: 9999;
+	pointer-events: none;
+	@include eltdfTransition(opacity 100ms cubic-bezier(0.39, 0.575, 0.565, 1));
+
+	&.eltdf-is-active {
+		opacity: 1;
+	}
+
+	.eltdf-pl-follow-info-inner {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 20px 0 0;
+		@include eltdfTransform(translateX(-50%));
+	}
+
+	.eltdf-pl-follow-info-title {
+		position: relative;
+		display: block;
+		padding: 24px 30px;
+		font-size: 11px;
+		line-height: 1;
+		color: #fff;
+		font-family: $default-text-font;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		white-space: nowrap;
+		background-color: #000;
+		z-index: 8;
+	}
+}
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay Floated style - end
+   ========================================================================== */

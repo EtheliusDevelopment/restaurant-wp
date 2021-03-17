@@ -1,0 +1,34 @@
+
+@include ipad-portrait {
+	.eltdf-dual-image-showcase-holder {
+		display: block;
+
+		.eltdf-dis-text-holder {
+			display: block;
+			width: 100%;
+		}
+
+		.eltdf-dis-inner-holder {
+			display: block;
+			width: 100%;
+			padding: 0;
+
+			.eltdf-foreground-image-holder {
+				display: none;
+			}
+		}
+
+		&.eltdf-dual-image-showcase-left {
+			.eltdf-dis-text-holder {
+				padding-left: 0;
+				padding-top: 47px;
+			}
+		} 
+
+		&.eltdf-dual-image-showcase-right {
+			.eltdf-btn {
+				margin-bottom: 55px;
+			}
+		}
+	}
+}

@@ -1,0 +1,81 @@
+/* ==========================================================================
+# Circle Carousels style - begin
+========================================================================== */
+
+.eltdf-circle-carousel {
+	@include eltdfRelativeHolderLayout();
+	visibility: hidden;
+	z-index: 50;
+	padding: 30px 0;
+
+	.eltdf-circle-carousel-slider {
+		@include eltdfRelativeHolderLayout();
+		height: 500px; /* default value for slider height if any value is not set in shortcode options */
+
+		img {
+		    visibility: hidden; /* hide images until carousel prepares them */
+		    cursor: pointer; /* not needed if you wrap carousel items in links */
+	  	}
+	}
+}
+
+.eltdf-circle-carousel-navigation {
+	> * {
+		position: absolute;
+		top: 50%;
+		width: 70px;
+		height: 70px;
+		line-height: 70px;
+		text-align: center;
+		cursor: pointer;
+		z-index: 60;
+		@include eltdfTransform(translateY(-50%));
+
+		&.eltdf-prev-icon-holder {
+			left: -50px;
+		}
+
+		&.eltdf-next-icon-holder {
+			right: -50px;
+		}
+
+		.eltdf-nav-text-holder {
+			position: absolute;
+			display: inline-block;
+			width: 100%;
+			@include eltdfTransform(rotate(-90deg));
+			
+			&.eltdf-prev {
+				left: 35px;
+			}
+			
+			&.eltdf-next {
+				right: 35px;
+			}
+			
+			&:hover {
+				
+				span {
+					color: $default-heading-color;
+				}
+			}
+		}
+		
+		span {
+			display: block;
+			font-size: 11px;
+			letter-spacing: .04em;
+			text-transform: uppercase;
+			color: $default-text-color;
+			@include eltdfTransition(color .2s ease-out);
+		}
+	}
+}
+
+.eltdf-circle-carousel.eltdf-circle-carousel-navigation-disabled .eltdf-circle-carousel-navigation{
+	display: none;
+}
+
+/* ==========================================================================
+# Circle Carousels style - end
+========================================================================== */

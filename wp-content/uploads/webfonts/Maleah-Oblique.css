@@ -1,0 +1,12 @@
+/* Webfont: Maleah-Oblique */@font-face {
+    font-family: 'Maleah2';
+    src: url('Maleah-Oblique.eot'); /* IE9 Compat Modes */
+    src: url('Maleah-Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Maleah-Oblique.woff') format('woff'), /* Modern Browsers */
+         url('Maleah-Oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Maleah-Oblique.svg#Maleah-Oblique') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

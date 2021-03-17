@@ -1,0 +1,53 @@
+/* ==========================================================================
+# Team carousel - begin
+	========================================================================== */
+
+.eltdf-pricing-list-carousel-holder {
+    
+    .eltdf-owl-slider {
+        
+        .eltdf-pricing-list {
+            width: calc(100% + 1px);
+        }
+        
+        .owl-nav {
+            
+            @include ipad-landscape {
+                display: none;
+            }
+            
+            .owl-prev {
+                left: -115px;
+            }
+
+            .owl-next {
+                right: -115px;
+            }
+
+            .eltdf-prev-text,
+            .eltdf-next-text {
+                position: relative;
+                top: -15px;
+                display: block;
+                font-size: 11px;
+                letter-spacing: .02em;
+                text-transform: uppercase;
+                -webkit-transform-style: preserve-3d;
+                -webkit-transform-origin: 50% 51%;
+                @include eltdfTransform(rotate(-90deg));
+            }
+
+            .eltdf-prev-text {
+                left: 35px;
+            }
+            
+            .eltdf-next-text {
+                right: 35px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Team carousel - end
+	========================================================================== */

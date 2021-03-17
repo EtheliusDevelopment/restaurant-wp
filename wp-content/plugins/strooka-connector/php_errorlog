@@ -1,0 +1,22 @@
+[27-Jul-2020 09:16:15 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/izumilano/public_html/wp-content/plugins/strooka-connector/strooka_connector.php:353
+Stack trace:
+#0 {main}
+  thrown in /home/izumilano/public_html/wp-content/plugins/strooka-connector/strooka_connector.php on line 353
+[27-Jul-2020 09:16:26 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/izumilano/public_html/wp-content/plugins/strooka-connector/strooka_connector.php:353
+Stack trace:
+#0 {main}
+  thrown in /home/izumilano/public_html/wp-content/plugins/strooka-connector/strooka_connector.php on line 353
+[27-Jul-2020 09:18:59 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/izumilano/public_html/wp-content/plugins/strooka-connector/strooka_connector.php:354
+Stack trace:
+#0 {main}
+  thrown in /home/izumilano/public_html/wp-content/plugins/strooka-connector/strooka_connector.php on line 354
+[27-Jul-2020 09:19:22 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/izumilano/public_html/wp-content/plugins/strooka-connector/strooka_connector.php:355
+Stack trace:
+#0 {main}
+  thrown in /home/izumilano/public_html/wp-content/plugins/strooka-connector/strooka_connector.php on line 355
+[27-Jul-2020 09:52:47 CST6CDT] PHP Recoverable fatal error:  Object of class mysqli could not be converted to string in /home/izumilano/public_html/wp-content/plugins/strooka-connector/strooka_connector.php on line 406
+[27-Jul-2020 10:26:31 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/izumilano/public_html/wp-content/plugins/strooka-connector/strooka_connector.php:572
+Stack trace:
+#0 /home/izumilano/public_html/wp-content/plugins/strooka-connector/strooka_connector.php(971): show_prod(Array)
+#1 {main}
+  thrown in /home/izumilano/public_html/wp-content/plugins/strooka-connector/strooka_connector.php on line 572

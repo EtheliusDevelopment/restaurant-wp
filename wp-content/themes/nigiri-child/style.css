@@ -1,0 +1,2609 @@
+/*
+Theme Name: Nigiri Child
+Theme URI: http://nigiri.elated-themes.com
+Description: A child theme of Nigiri Theme
+Author: Elated Themes
+Author URI: http://themeforest.net/user/elated-themes
+Version: 1.0.1
+Text Domain: nigiri
+Template: nigiri
+*/
+
+
+/* Webfont: Maleah-Regular */@font-face {
+    font-family: 'Maleah';
+    src: url('fonts/Maleah-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Maleah-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Maleah-Regular.woff') format('woff'), /* Modern Browsers */
+		url('fonts/Maleah-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('fonts/Maleah-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Maleah-Regular.svg#Maleah-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+   /* text-rendering: optimizeLegibility;*/
+	font-display: swap;
+    
+}
+
+/* Webfont: Maleah-Bold */@font-face {
+    font-family: 'Maleah';
+    src: url('fonts/Maleah-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Maleah-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Maleah-Bold.woff') format('woff'), /* Modern Browsers */
+		url('fonts/Maleah-Bold.woff2') format('woff2'),
+         url('fonts/Maleah-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Maleah-Bold.svg#Maleah-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+   /* text-rendering: optimizeLegibility;*/
+	font-display: swap;
+}
+
+/* Webfont: Maleah-Light */@font-face {
+    font-family: 'MaleahLight';
+    src: url('fonts/Maleah-Light.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Maleah-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Maleah-Light.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Maleah-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Maleah-Light.svg#Maleah-Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    /*text-rendering: optimizeLegibility;*/
+	font-display: swap;
+}
+
+/* Webfont: Maleah-Oblique */@font-face {
+    font-family: 'Maleah2';
+    src: url('fonts/Maleah-Oblique.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Maleah-Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Maleah-Oblique.woff') format('woff'), /* Modern Browsers */
+		url('fonts/Maleah-Oblique.woff2') format('woff2'),
+         url('fonts/Maleah-Oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Maleah-Oblique.svg#Maleah-Oblique') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    /*text-rendering: optimizeLegibility;*/
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brooklyn';
+    src: url('fonts/Brooklyn-Bold.eot');
+    src: url('fonts/Brooklyn-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Brooklyn-Bold.woff2') format('woff2'),
+        url('fonts/Brooklyn-Bold.woff') format('woff'),
+        url('fonts/Brooklyn-Bold.ttf') format('truetype'),
+        url('fonts/Brooklyn-Bold.svg#Brooklyn-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brooklyn';
+    src: url('fonts/Brooklyn-SemiBoldItalic.eot');
+    src: url('fonts/Brooklyn-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Brooklyn-SemiBoldItalic.woff2') format('woff2'),
+        url('fonts/Brooklyn-SemiBoldItalic.woff') format('woff'),
+        url('fonts/Brooklyn-SemiBoldItalic.ttf') format('truetype'),
+        url('fonts/Brooklyn-SemiBoldItalic.svg#Brooklyn-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brooklyn Normal';
+    src: url('fonts/Brooklyn-Normal.eot');
+    src: url('fonts/Brooklyn-Normal.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Brooklyn-Normal.woff2') format('woff2'),
+        url('fonts/Brooklyn-Normal.woff') format('woff'),
+        url('fonts/Brooklyn-Normal.ttf') format('truetype'),
+        url('fonts/Brooklyn-Normal.svg#Brooklyn-Normal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brooklyn';
+    src: url('fonts/Brooklyn-HeavyItalic.eot');
+    src: url('fonts/Brooklyn-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Brooklyn-HeavyItalic.woff2') format('woff2'),
+        url('fonts/Brooklyn-HeavyItalic.woff') format('woff'),
+        url('fonts/Brooklyn-HeavyItalic.ttf') format('truetype'),
+        url('fonts/Brooklyn-HeavyItalic.svg#Brooklyn-HeavyItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brooklyn';
+    src: url('fonts/Brooklyn-BoldItalic.eot');
+    src: url('fonts/Brooklyn-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Brooklyn-BoldItalic.woff2') format('woff2'),
+        url('fonts/Brooklyn-BoldItalic.woff') format('woff'),
+        url('fonts/Brooklyn-BoldItalic.ttf') format('truetype'),
+        url('fonts/Brooklyn-BoldItalic.svg#Brooklyn-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brooklyn';
+    src: url('fonts/Brooklyn-Heavy.eot');
+    src: url('fonts/Brooklyn-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Brooklyn-Heavy.woff2') format('woff2'),
+        url('fonts/Brooklyn-Heavy.woff') format('woff'),
+        url('fonts/Brooklyn-Heavy.ttf') format('truetype'),
+        url('fonts/Brooklyn-Heavy.svg#Brooklyn-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brooklyn Normal';
+    src: url('fonts/Brooklyn-Italic.eot');
+    src: url('fonts/Brooklyn-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Brooklyn-Italic.woff2') format('woff2'),
+        url('fonts/Brooklyn-Italic.woff') format('woff'),
+        url('fonts/Brooklyn-Italic.ttf') format('truetype'),
+        url('fonts/Brooklyn-Italic.svg#Brooklyn-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brooklyn';
+    src: url('fonts/Brooklyn-SemiBold.eot');
+    src: url('fonts/Brooklyn-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Brooklyn-SemiBold.woff2') format('woff2'),
+        url('fonts/Brooklyn-SemiBold.woff') format('woff'),
+        url('fonts/Brooklyn-SemiBold.ttf') format('truetype'),
+        url('fonts/Brooklyn-SemiBold.svg#Brooklyn-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+	font-display: swap;
+}
+
+
+@media only screen and (max-width: 600px)
+#bgwhite .wpb_wrapper {
+    background: transparent!important;
+}
+.widget.widget_text img {
+    display: inline-block!important;
+}
+.ion-grid:before {
+    content: url(https://www.izumilano.com/wp-content/uploads/2020/06/delivery.png)!important;
+}
+.eltdf-dis-text-holder .eltdf-btn.eltdf-btn-outline.eltdf-has-hover-animation:not(.eltdf-btn-custom-border-hover):hover, .eltdf-btn.eltdf-btn-outline:not(.eltdf-btn-custom-border-hover):hover {
+    border-color: #C29A5D!important;
+    background: #C29A5D!Important;
+    color: #fff!important;
+}
+.eltdf-btn.eltdf-btn-outline.eltdf-has-hover-animation:hover .eltdf-btn-text:after {
+    visibility: hidden!important;
+}
+/** Modal **/
+.pum-theme-6146 .pum-container, .pum-theme-lightbox .pum-container {
+    border: 8px solid transparent!important;
+}
+
+.eltdf-side-menu-slide-from-right .eltdf-wrapper .eltdf-cover{
+	margin-top: 80px!important;
+}
+.eltdf-top-bar .widget.widget_text {
+    margin: auto!important;
+}
+.topbar1 a {
+color: #3B2928!important;
+}
+.topbar1 {
+    padding: 15px 10px;
+    background: #c49c5e;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+}
+/** Header **/
+
+.eltdf-mobile-header .eltdf-mobile-menu-opener.eltdf-mobile-menu-opener-icon-pack .eltdf-mobile-menu-icon *, .eltdf-mobile-header .eltdf-mobile-menu-opener.eltdf-mobile-menu-opener-icon-pack .eltdf-mobile-menu-icon :before {
+    display: inherit!important;
+}
+
+
+body{
+	font-family: 'Brooklyn',sans-serif!important;
+	letter-spacing: 0;
+	color:#3B2928!important;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Maleah'!important;
+    color: #3B2928!important;
+}
+h1 {
+    font-size: 52px!important;
+}
+h3 {
+    font-size: 24px!important;
+}
+h6 {
+    font-family: 'Brooklyn'!important;
+    color:#C29A5D!important;
+    font-size:15px!important;
+}
+.eltdf-btn{
+    font-family: 'Maleah'!important;
+    font-size: 16px!important;
+    font-weight: 600!important;
+}
+.eltdf-main-menu>ul>li>a {
+    padding: 0 15px!important;
+    font-family: Maleah!important;
+    text-transform: uppercase!important;
+    font-size: 15px!important;
+    font-weight: 600!important;
+    letter-spacing: 0.0em!important;
+    color: #3B2928!important;
+    }
+a.eltdf-btn.eltdf-btn-small.eltdf-btn-outline.eltdf-section-title-button.eltdf-has-hover-animation:hover {
+    border-color: #C29A5D!important;
+    color:#C29A5D!important;
+}
+.eltdf-btn.eltdf-btn-outline{
+    color: #3B2928!important;
+    border: 1px solid #3B2928!important;
+}
+.eltdf-dis-text-holder .eltdf-btn.eltdf-btn-outline.eltdf-has-hover-animation:not(.eltdf-btn-custom-border-hover):hover, .eltdf-btn.eltdf-btn-outline:not(.eltdf-btn-custom-border-hover):hover{
+    border-color: #C29A5D!important;
+}
+.but-custom h1{
+    color: #ffffff!important;
+}
+.but-custom .eltdf-btn.eltdf-btn-outline{
+    color: #ffffff!important;
+}
+.eltdf-btn.eltdf-btn-outline:hover{
+    border-color: #C29A5D!important;
+}
+
+a.eltdf-btn.eltdf-btn-small.eltdf-btn-outline.eltdf-section-title-button.eltdf-has-hover-animation{
+    color:#ffffff;
+    border-color: #FFFFFF!important;
+}
+a.eltdf-btn.eltdf-btn-small.eltdf-btn-outline.eltdf-section-title-button.eltdf-has-hover-animation{
+    color:#ffffff;
+    border-color: #FFFFFF!important;
+}
+.btn_cartavini a.eltdf-btn.eltdf-btn-small.eltdf-btn-outline.eltdf-section-title-button.eltdf-has-hover-animation{
+    color:#46322c;
+    border-color: #46322c!important;
+}
+.btn_cartavini a.eltdf-btn.eltdf-btn-small.eltdf-btn-outline.eltdf-section-title-button.eltdf-has-hover-animation:hover {
+    color:#ffffff!important;
+    border-color: #FFFFFF!important;
+    background-color:transparent!important;
+}
+
+.eltdf-icon-list-holder>a:hover{
+    color: #C29A5D!important;
+}
+.myheader-custom-title{
+	padding-bottom: 70px !important;
+    padding-left: 50px !important;
+}
+.myheader-custom-title .wpb_wrapper {
+    border: 1px solid #ffffff;
+    width: 220px;
+    height: 70px;
+    margin-top:-20px;
+}
+.myheader-custom-title .wpb_wrapper div{
+    text-align: center;
+    padding-top:23px;
+    font-size:1.7em;
+    font-family: 'Maleah',sans-serif;
+}
+
+/* side slider  */
+
+.eltdf-side-menu .eltdf-btn.eltdf-btn-outline{
+    color: #FFFFFF!important;
+    border: 1px solid #FFFFFF!important;
+}
+.eltdf-side-menu .eltdf-btn.eltdf-btn-outline:not(.eltdf-btn-custom-hover-bg):hover{
+    color:#C29A5D!important;
+    border-color: #C29A5D!important;
+    background-color: transparent!important;
+}
+
+/* timetable footer  */
+.eltdf-opening-hours-holder .eltdf-opening-hours-holder-inner .eltdf-opening-hours-day-holder, .eltdf-opening-hours-holder .eltdf-opening-hours-holder-inner .eltdf-opening-hours-time{
+    font-family:  'Brooklyn'!important;
+    font-size:15px!important;
+} 
+.eltdf-opening-hours-holder .eltdf-opening-hours-holder-inner .eltdf-opening-hours-day-holder .eltdf-opening-hours-day {
+    padding-right: 5px!important;
+}
+
+
+/* side social info  */
+.dual-image-pdg .eltdf-dis-text-holder{
+    padding-left: 50px!important;
+    padding-right: 30px!important;
+}
+
+.eltdf-ss-inner span, .eltdf-social-sidebar-holder .eltdf-ss-inner>*{
+    font-family: 'Maleah'!important;
+    font-weight: 600!important;
+    text-transform: uppercase!important;
+    font-size: 13px!important;
+    color: #3B2928!important;
+}
+.eltdf-social-sidebar-holder a:hover {
+    color: #C29A5D!important;
+}
+.eltdf-social-sidebar-holder a:hover span {
+    color: #C29A5D!important;
+}
+#eltdf-back-to-top span{
+    font-family: 'Maleah'!important;
+    font-weight: 600!important;
+    text-transform: uppercase!important;
+    font-size: 11px!important;
+    width:100px!important;
+}
+
+/* accordion */
+.eltdf-accordion-holder.eltdf-ac-simple .eltdf-accordion-title {
+    padding: 5px 0 5px 30px!important;
+}
+.eltdf-tab-title {
+    font-size: 22px;
+    text-align: center;
+}
+
+/*  blog */
+
+.eltdf-blog-list-holder .eltdf-bli-info>div, .eltdf-blog-list-holder .eltdf-bli-info>div a {
+    color: #C29A5D!important;
+}
+.eltdf-btn.eltdf-btn-simple{
+    color: #C29A5D!important;
+}
+
+/*  tabs */
+.eltdf-tabs.eltdf-tabs-boxed .eltdf-tabs-nav li a {
+    font-family: Maleah!important;
+    font-weight: 600!important;
+    font-size: 14px!important;
+}
+.eltdf-tabs.eltdf-tabs-boxed .eltdf-tabs-nav li a:hover{
+    color: #C29A5D!important;
+}
+.eltdf-tabs.eltdf-tabs-boxed .eltdf-tabs-nav li.ui-state-active a{
+    color: #C29A5D!important;
+}
+
+/*  contact forms*/
+input.wpcf7-form-control.wpcf7-submit {
+    font-family: Maleah!important;
+    font-size: 14px!important;
+    font-weight: 600!important;
+}
+.eltdf-input-privacy-holder {
+    border-top: 1px solid #000000!important;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+/* BLOG */
+.single-post  .eltdf-title-image, .single-post .eltdf-title-wrapper  {
+    display:none!important;
+}
+
+/* Booking Form BEGIN */
+
+.rtb-booking-form .reservation > div, 
+.rtb-booking-form .contact .rtb-text {
+    width: 31%;
+    float: left;
+    margin-right: 2%;
+}
+
+
+.rtb-booking-form legend {
+    display: none;
+}
+
+.rtb-booking-form label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+.rtb-booking-form .reservation > div:last-child,
+.rtb-booking-form .contact .rtb-text.phone {
+    width: 33%;
+    margin-right: 0%;
+}
+
+.rtb-booking-form .contact .add-message:before {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+
+.rtb-booking-form label {
+    margin-bottom: 10px;
+}
+
+
+.rtb-booking-form .rtb-text .comm-field, 
+.rtb-booking-form .contact-field, #msg-contact {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    background: #f2f2f2;
+    margin-bottom: 8px; 
+}
+
+.rtb-booking-form .rtb-text input,
+.rtb-booking-form .rtb-text input[type=text],
+.rtb-booking-form .rtb-text input[type=email],
+.rtb-booking-form .rtb-text input[type=tel], 
+.rtb-booking-form .rtb-select select {
+    padding: 16px;
+    border: none;
+    background: #f2f2f2;
+    margin-bottom: 8px;
+    width: 100%;
+    max-width: 100% !important; 
+}
+
+
+
+.rtb-booking-form button {
+    border: 2px solid #8d6c4a;
+    background-color: rgba(15,23,43,0);
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: inline-block;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    webkit-backface-visibility: hidden;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    color: #8d6c4a;
+}
+
+.rtb-booking-form button:hover,
+.rtb-booking-form button:active {   
+    color: #ffffff;
+        background-color: #8d6c4a;
+        border-color: #8d6c4a;
+}
+
+.rtb-booking-form .rtb-textarea.message {
+    float: none;
+    width: 100%;
+    clear: both;
+        margin-top: 20px;
+        display: inline-block;
+}
+
+.rtb-booking-form .message-open,
+.rtb-booking-form .add-message  {
+    float: left!important;
+}
+.rtb-booking-form .add-message {
+    width: 100%;
+    text-align: left;
+}
+.rtb-booking-form .add-message a {
+    visibility: hidden;
+    position: relative;
+}
+.rtb-booking-form .add-message a:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Inserisci messaggio";
+}
+
+.rtb-booking-form a:hover {
+    color: #8d6c4a;
+}
+
+
+.rtb-booking-form textarea {
+    font-size: 100%;
+    border: 0;
+    border-bottom: 1px solid #dce0e0;
+    margin: 0;
+    overflow: auto;
+    padding: .6em 0 .6em 0;
+    outline: none;
+    -webkit-transition: border-color linear .2s;
+    -moz-transition: border-color linear .2s;
+    -o-transition: border-color linear .2s;
+    transition: border-color linear .2s;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+.custom-reservation-form{
+    text-align: center;
+}
+.rtb-booking-form select {
+    min-width: 100%;
+    outline: none;
+    -webkit-appearance: none;
+    color: #222222;
+    font-size: 14px;
+    padding: 18px 16px;
+}
+.rtb-booking-form input[type=tel]{
+    font-size:13px;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+
+.rtb-booking-form {
+font-family: 'Brooklyn'!important;
+}
+
+.rtb-booking-form button {
+    font-family: 'Maleah'!important;
+    font-size: 16px!important;
+    font-weight: 600!important;
+    padding: 14px 34px;
+    color: #3B2928!important;
+    border: 1px solid #3B2928!important;
+}
+
+.rtb-booking-form button:hover, .rtb-booking-form button:active {
+    border-color:#C29A5D!important;
+    background-color: transparent;
+}
+
+/* BOOKING FORM END */
+
+.eltdf-custom-form-holder .eltdf-custom-form-submit input.wpcf7-form-control.wpcf7-submit {
+    font-family: 'Maleah'!important;
+    font-size: 16px!important;
+    font-weight: 600!important;
+    padding: 14px 34px;
+    color: #3B2928!important;
+    border: 1px solid #3B2928;
+}
+
+.wpcf7-submit:hover {
+    border-color:#C29A5D!important;
+    background-color: transparent!important;
+}
+
+
+/* revslider */
+#rev_slider_10_1_wrapper .nigiri-navigation-light.tparrows.tp-leftarrow .eltdf-nav-arrow:before {
+    content: 'Prec';
+    font-size:1.3em;
+    font-family: 'Maleah',sans-serif;
+}
+#rev_slider_10_1_wrapper .nigiri-navigation-light.tparrows.tp-rightarrow .eltdf-nav-arrow:before {
+    content: 'Succ';
+    font-size:1.3em;
+    font-family: 'Maleah',sans-serif;
+}
+
+
+ /* mobie menu*/
+
+.eltdf-mobile-header .eltdf-mobile-nav .eltdf-grid>ul>li>a, .eltdf-mobile-header .eltdf-mobile-nav .eltdf-grid>ul>li>h6 {
+    font-family: 'Maleah',sans-serif!important;
+    font-size: 15px!important;
+    text-transform: uppercase!important;
+    font-weight:600;
+}
+
+
+ /* media query */
+@media only screen and (max-width: 992px) {
+
+
+
+    .rtb-booking-form .reservation > div, 
+    .rtb-booking-form .contact .rtb-text {
+        width: 100% !important;
+        margin-right: 0px !important;
+    }
+    .page-id-4987 .dual-image-pdg .eltdf-dis-text-holder {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    .vc_custom_1529657371090 {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+    }
+
+
+}
+
+
+/** From Costumize **/
+#ANTIPASTI .wpb_wrapper, #CRUDITÈ .wpb_wrapper,
+#ZUPPE  .wpb_wrapper,
+#URAMAKI .wpb_wrapper,
+#UNCATEGORIZED .wpb_wrapper,
+#TEMPURA .wpb_wrapper,
+#TEMAKI .wpb_wrapper,
+
+#RISO .wpb_wrapper,
+#PASTAFRESCA .wpb_wrapper,
+#INSALATE .wpb_wrapper,
+#HOSOMAKI .wpb_wrapper,
+#GUNKAN .wpb_wrapper,
+#DESSERT .wpb_wrapper,
+#DALLA_TERRA .wpb_wrapper,
+#DAL_MARE .wpb_wrapper,
+#CONTORNI .wpb_wrapper,
+#COMPOSIZIONI .wpb_wrapper,
+#SUSHI_NIGHIRI .wpb_wrapper,
+#CHIRASHI .wpb_wrapper,
+#TARTARE .wpb_wrapper,
+#CARPACCIO .wpb_wrapper {
+	margin-top:150px;
+	
+}
+.prodotti_menu {
+	margin-top:-150px;
+}
+.widget_product_categories ul li {
+	line-height:.8em
+}
+body {
+	transition:all 1s;
+}
+.eltdf-st-title {
+			font-size: 52px !important;
+}
+.section_title_home  .eltdf-st-title {
+	color: #ffffff !important;
+		font-size: 52px !important
+}
+
+#domiciliobanner {
+	background-repeat: no-repeat !important;
+    background-size: cover;
+}
+.eltdf-st-subtitle, .eltdf-dis-subtitle {
+	font-family: 'Brooklyn'!important;
+    color: #C29A5D!important;
+    font-size: 15px!important;
+
+}
+.product-categories .count {
+	display:none;
+}
+#text-4 .eltdf-widget-title , .eltdf-google-map-widget .eltdf-widget-title {
+	display:block ;
+}
+.eltdf-dis-title   {
+	font-size: 52px !important
+}
+
+.eltdf-dis-title {
+
+}
+
+.eltdf-pl-text,.added_to_cart {
+	position:relative !important;
+	
+}
+
+
+.added_to_cart {
+	background-color: white  !important;
+		font-family : 'Maleah'!important;
+	color: #c29a5d !important;
+	    width: 100% !IMPORTANT;
+    MARGIN-LEFT: 0 !IMPORTANT;
+	font-weight:800 !important;
+}
+
+.eltdf-pl-text : hover {
+	position:relative !important;
+	transition:none !important;
+	
+}
+.eltdf-pl-text a.button {
+	position:relative !important;
+	background-color:white !important;
+	color:#c29a5d !important;
+	font-weight:800 !important;
+	
+}
+
+.star-rating ,.eltdf-pl-rating-holder{
+	display:none !important;
+}
+.eltdf-product-list-title {
+	font-size : 25px !important;
+	font-weight:500
+}
+.price {
+	padding-bottom:10px;
+	border-bottom: 1px solid black;
+}
+@media  screen and  (min-width: 1920px) {
+	#picture_header {
+	width:90vw;
+	font-family : 'Maleah'!important;
+	font-size:20px;
+	margin-bottom:5%;
+	font-weight:500;
+}
+}
+
+
+
+.cat-item  a, .cart_list a, .price  {
+	color:black !important;
+		font-weight:500
+}
+#ANTIPASTI {
+	MARGIN-TOP:5%;
+}
+.prodotti_menu {
+	width: 75%;
+}
+.eltdf-widget-title {
+	display:none;
+}
+#ANTIPASTI .eltdf-st-title, #CRUDITÈ .eltdf-st-title,.crudite .eltdf-st-title,
+.dalmare .eltdf-st-title,.dallaterra .eltdf-st-title, .pastafresca .eltdf-st-title,.sushinighiri .eltdf-st-title,
+#ZUPPE  .eltdf-st-title,
+#URAMAKI .eltdf-st-title,
+#UNCATEGORIZED .eltdf-st-title,
+#TEMPURA .eltdf-st-title,
+#TEMAKI .eltdf-st-title,
+#RISO .eltdf-st-title,
+#PASTA_FRESCA .eltdf-st-title,
+#INSALATE .eltdf-st-title,
+#HOSOMAKI .eltdf-st-title,
+#GUNKAN .eltdf-st-title,
+#DESSERT .eltdf-st-title,
+.page-id-5269 .eltdf-st-title,
+#DAL_MARE .eltdf-st-title,
+#CONTORNI .eltdf-st-title,
+#COMPOSIZIONI .eltdf-st-title,
+#SUSHI_NIGHIRI .eltdf-st-title,
+#CHIRASHI .eltdf-st-title,
+#TARTARE .eltdf-st-title,
+#CARPACCIO .eltdf-st-title ,
+#PASTA_FRESCA > div > div > div.eltdf-section-title-holder.eltdf-position-center > div > h2,#DALLA_TERRA > div > div > div.eltdf-section-title-holder.eltdf-position-center > div > h2,#CRUDITÈ > div > div > div.eltdf-section-title-holder.crudite.eltdf-position-center > div > h2
+{
+color: #c29a5d !important;
+	font-size: 45px;
+}
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div {
+	padding-top:10px;
+	
+}
+
+#picture_header {
+	width:90vw;
+
+padding-top: 30px;
+    margin-top: -3%;
+	font-family : 'Maleah'!important;
+	font-size:20px;
+	margin-bottom:5%;
+	font-weight:500;
+	position:fixed;
+	background-color:white;
+}
+#picture_header .wpb_wrapper :nth-child(2) {
+	text-align:center !important;
+	padding-right:5%
+}
+#picture_header .wpb_wrapper :nth-child(3) {
+	text-align:center !important;
+	padding-right:5%
+}
+
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9 > aside > div.widget.woocommerce.widget_product_categories {
+	z-index : 130
+}
+.widget_shopping_cart {
+	right: 100px !important;
+  position: fixed !important;
+  width: 17% !important;
+	top:60% !important;;
+	position: fixed !important;
+	z-index:101
+	
+}
+.mini_cart_item {
+	width:100% !important
+}
+
+.eltdf-page-footer {
+z-index:99;	
+	
+}
+
+.widget_product_categories {
+	position: fixed !important;
+	top:50% !important;
+}
+
+.widget_shopping_cart .eltdf-widget-title {
+	text-align:center;
+	font-family: 'Brooklyn',sans-serif!important;
+}
+.mini_cart_item .size-woocommerce_thumbnail{
+	display:none !important
+}
+.wc-forward{
+	width: 80% !important;
+	padding: 12px 12px !important;
+	margin: auto !important;
+	text-align: center !important;
+	margin-right:10% !important;
+	margin-left:10% !important;
+	
+}
+
+
+
+.wc-forward {
+	
+	width: 60% !important;
+	padding: 12px 12px !important;
+	margin: auto !important;
+	margin-top:10px !important;
+	text-align: center !important;
+	margin-right:10% !important;
+	margin-left:10% !important;
+
+	
+}
+
+.remove_from_cart_button {
+	margin-right: 10px !important;
+	position:absolute !important;
+	z-index :9999 !important;
+}
+
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9 > aside > div.widget.woocommerce.widget_product_categories {
+	width:20% !important;
+	float: left;
+    left: 100px;
+}
+
+
+.eltdf-grid-col-push-3 {
+	left:20% !important;
+}
+
+
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-title-holder.eltdf-standard-type.eltdf-title-va-window-top {
+    height: 750px;
+    background-color: #ffffff;
+    margin-top: 80px;
+    margin-left: 8.3%;
+    margin-right: 8.3%;
+    width: 93% !important;
+    background: url('https://www.izumilano.com/wp-content/uploads/2020/06/cover_delivery.jpg');
+    background-repeat: no-repeat;
+    background-size: 90% 100%;	
+}
+
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-title-holder.eltdf-standard-type.eltdf-title-va-window-top
+{
+	height: 450px !important;
+}
+
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9 > aside > div.widget.woocommerce.widget_product_categories
+
+{
+top:75% !important;	
+	margin-left: 2%;
+} 
+
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-title-holder.eltdf-standard-type.eltdf-title-va-window-top > div > div > div 
+{
+	top: 30% !important;
+	
+}
+
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-title-holder.eltdf-standard-type.eltdf-title-va-window-top > div > div > div > h1 
+{
+	border: 1px solid white;
+	width: 25% !important;
+    padding: 1% !important;
+	color:white !important;
+	display:none;
+}
+.checkout , .wc-forward  {
+	width: 100% !important;
+	border-bottom:2px solid black !important;
+	font-weight: 800 !important;
+	padding-top: 0 !important;
+	padding-bottom: 8px !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	
+}
+.woocommerce-mini-cart__total  {
+	color: #c29a5d !important;
+	text-align:right;
+	padding-bottom:12px;
+	border-bottom: 2px solid black;
+}
+
+@media only screen and (max-width: 600px) {	
+	.page-id-5269 .eltdf-title-va-window-top {
+		display:none;
+	}
+	#ANTIPASTI .wpb_wrapper, #CRUDITÈ .wpb_wrapper,
+#ZUPPE  .wpb_wrapper,
+#URAMAKI .wpb_wrapper,
+#UNCATEGORIZED .wpb_wrapper,
+#TEMPURA .wpb_wrapper,
+#TEMAKI .wpb_wrapper,
+
+#RISO .wpb_wrapper,
+#PASTAFRESCA .wpb_wrapper,
+#INSALATE .wpb_wrapper,
+#HOSOMAKI .wpb_wrapper,
+#GUNKAN .wpb_wrapper,
+#DESSERT .wpb_wrapper,
+#DALLA_TERRA .wpb_wrapper,
+#DAL_MARE .wpb_wrapper,
+#CONTORNI .wpb_wrapper,
+#COMPOSIZIONI .wpb_wrapper,
+#SUSHI_NIGHIRI .wpb_wrapper,
+#CHIRASHI .wpb_wrapper,
+#TARTARE .wpb_wrapper,
+#CARPACCIO .wpb_wrapper {
+	margin-top:unset;
+	
+}
+.prodotti_menu {
+	margin-top:unset;
+}
+	#ANTIPASTI .eltdf-st-title, #CRUDITÈ .eltdf-st-title,
+#ZUPPE  .eltdf-st-title,
+#URAMAKI .eltdf-st-title,
+#UNCATEGORIZED .eltdf-st-title,
+#TEMPURA .eltdf-st-title,
+#TEMAKI .eltdf-st-title,
+#RISO .eltdf-st-title,
+#PASTAFRESCA .eltdf-st-title,
+#INSALATE .eltdf-st-title,
+#HOSOMAKI .eltdf-st-title,
+#GUNKAN .eltdf-st-title,
+#DESSERT .eltdf-st-title,
+#DALLA_TERRA .eltdf-st-title,
+#DAL_MARE .eltdf-st-title,
+#CONTORNI .eltdf-st-title,
+#COMPOSIZIONI .eltdf-st-title,
+#SUSHI_NIGHIRI .eltdf-st-title,
+#CHIRASHI .eltdf-st-title,
+#TARTARE .eltdf-st-title,
+#CARPACCIO .eltdf-st-title {
+color: white !important;
+	font-size: 45px;
+}
+	
+	#CRUDITÈ .vc_column-inner{
+		padding-right:10%;
+	} 
+		#ANTIPASTI .vc_column-inner{
+		padding-right:1%;
+	} 
+	.vc_empty_space {
+		display:none
+	}
+ul.products
+	{
+		margin-top: 10px !important;
+	}
+	.product_meta {
+		display:none;
+	}
+	.eltdf-pl-text-wrapper{
+		margin-top:0 !important
+	}
+	.eltdf-product-list-title a {
+		font-size:15px !important
+	}
+	.entry-summary h1{
+		font-size:25px ;
+		text-align: center;
+	}
+	.entry-summary {
+		text-align: center;
+	}
+	.entry-summary .price {
+		 margin-left: 25% !important;    margin-left: 45% !important;
+    background-color: white;
+    border-bottom: 0;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    font-family: maleah !important;
+
+	}
+	.entry-summary	.woocommerce-product-details__short-description{
+		margin-top: 1% !important;
+		font-family: maleah !important;
+		  font-size: 15px !important;
+    font-weight: 700 !important;
+	}
+		.entry-summary	.woocommerce-product-details__short-description p{
+	line-height: 1.2em;	
+	}
+	.entry-summary .single_add_to_cart_button , .eltdf-quantity-buttons {
+		padding:0 !important;
+		width:40% !important;
+		color: #c29a5d !important;
+		border: 1.5px solid black !important;
+		   font-family: maleah !important;
+		float:right;
+		font-weight: 700 !important;
+		margin-right: 4% !important;
+	}
+	.eltdf-quantity-buttons {
+		float:left;
+		margin-right: 0 !important;
+		margin-left: 4% !important;
+	}
+	.icon_minus-06 {
+		float: left !important;
+    left: 0 !important;
+    height: 100% !important;
+    padding-top: 8% !important;
+		color: #c29a5d !important;
+		border-right:0 !important;
+	}
+	
+		.icon_minus-06 {
+		float: left !important;
+    left: 0 !important;
+    height: 100% !important;
+    padding-top: 8% !important;
+		color: #c29a5d !important;
+		border-right:0 !important;
+			font-weight:700;
+	}
+	
+	.icon_plus{
+		  height: 100% !important;
+    padding-top: 8% !important;
+		color: #c29a5d !important;
+		border-right:0 !important;
+		font-weight:700;
+	}
+	.eltdf-quantity-input {
+		border-right:0 !important;
+    border-left:0 !important;
+		margin:0 !important;
+		margin-left:15% !important;
+	}
+	.related.products
+	{
+		display:none;
+	}	
+.eltdf-single-product-summary	.eltdf-accordion-holder {
+		display:none;
+	}
+	
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-title-holder.eltdf-standard-type.eltdf-title-va-window-top, body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9 > aside > div.widget.woocommerce.widget_product_categories , body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9 > aside > div.widget.woocommerce.widget_shopping_cart {
+	width: 100% !important;
+    right: unset !important;
+    top: 90% !important;
+	z-index = 999999 !important;
+	left: 0 !important;
+	height:70px;
+	
+
+	}
+		
+	.wc-forward , .checkout {
+		    width: 50% !important;
+	}
+	.mini_cart_item {
+		display:none !important
+		
+	}
+	.eltdf-grid-col-push-3 {
+		left: 5% !important
+	}
+	.prodotti_menu {
+		width:100%;
+	}
+	.woocommerce-mini-cart__total {
+		width: 25%; 
+		float:left;
+		margin-left:2% !important;
+	}
+	.woocommerce-mini-cart__buttons 
+	{
+		width:70%;
+		float:right;
+	}
+	
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9 > aside > div.widget.woocommerce.widget_shopping_cart > div.widget_shopping_cart_content > p.woocommerce-mini-cart__buttons.buttons > a:nth-child(1) , body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9 > aside > div.widget.woocommerce.widget_shopping_cart > div.widget_shopping_cart_content > p.woocommerce-mini-cart__buttons.buttons > a:nth-child(2) {
+		width:50% !important;
+	border:0;
+	border-bottom:0 !important;
+	    padding-top: 0!important;
+    margin-top: 0 !important;
+	padding-left: 1% !important;
+    padding-right: 1% !important;
+	}
+	.woocommerce-mini-cart__total {
+		margin-top:2% !important;
+		color:black !important;
+		font-family:'Maleah' !important;
+		font-weight:600;
+		border-bottom:0 !important;
+	
+	}
+	.type-product {
+		width:50% !important
+	}
+	
+	
+	.eltdf-pl-text-inner {
+		padding:0}
+	
+	
+	.eltdf-widget-title {
+		font-size: 15px !important
+	}
+	body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9 > aside > div.widget.woocommerce.widget_product_categories {
+		display:none ;
+		position:relative !important;
+		left: 2px !important ;
+		width: 100% !important;
+				top: -3483px !important;
+		top: -195000% !important;
+    position: absolute !important;
+	}
+	
+	body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-page-content-holder.eltdf-grid-col-9.eltdf-grid-col-push-3 > div.vc_row.wpb_row.vc_row-fluid.prodotti_menu
+	{
+		/*margin-top: 700%;*/
+
+}
+	.eltdf-pl-text-inner a {
+		padding:0 !important;
+	}
+	
+	.cat-item {
+		height:60px;
+		padding-top:20px !important;
+	}
+	.cat-item a{
+		margin-top:50px !important;
+		color:white !important;
+		font-size:23px !important;
+	}
+		
+
+.cat-item-39  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/Antipasti.jpg);
+    background-size: 100% 100%;
+    
+}
+
+	
+#CARPACCIO  .eltdf-section-title-holder {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/carpaccio.jpg);
+    background-size: 100% 100%;
+    background-position-y: center;
+	COLOR:WHITE !important;
+	width:90%;
+}
+	
+	
+.cat-item-55  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/crudite.jpg);
+    background-size: 100% 100%;
+    background-position-y: center;
+}
+	
+	
+#ANTIPASTI .eltdf-st-inner {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/carpaccio.jpg);
+    background-size: 100% 100%;
+    background-position-y: center;
+	width:95%
+}
+	#ANTIPASTI .eltdf-st-title:first-child {
+	COLOR:WHITE !important;	
+	}
+#TARTARE .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/tartare.jpg);
+    background-size: 100% 100%;
+    background-position-y: center;
+		width:90%
+}
+	
+	
+	
+ 	#CRUDITÈ .eltdf-st-inner {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/uramaki.jpg);
+    background-size: 100% 100%;
+    background-position-y: center;
+		width:95%
+}
+	#CRUDITÈ .eltdf-st-title:first-child {
+		COLOR:WHITE !important
+	}
+	
+	
+#CONTORNI  .eltdf-st-title{
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/contorni.jpg);
+    background-size: 100% 100%;
+	width:90%;
+	COLOR:WHITE  !important
+    
+}
+#HOSOMAKI .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/hosomaki.jpg);
+    background-size: 100% 100%;
+	width:90%;
+    COLOR:WHITE !important
+}
+	#UNCATEGORIZED {
+		display:none;
+	}
+	#CHIRASHI .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/cirashi.jpg);
+    background-size: 100% 100%;
+	width:90%;
+    COLOR:WHITE !important
+}
+	
+		#COMPOSIZIONI .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/composizione.jpg);
+    background-size: 100% 100%;
+	width:90%;
+    COLOR:WHITE !important
+}
+		#DALLA_TERRA .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/dalla-terra.jpg);
+    background-size: 100% 100%;
+	width:90%;
+    COLOR:WHITE !important
+}
+		
+			#PASTA_FRESCA .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/pasta-fresca-in-padella.jpg);
+    background-size: 100% 100%;
+	width:90%;
+    COLOR:WHITE !important
+}
+				#SUSHI_NIGHIRI .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/sushi-nighiri.jpg);
+    background-size: 100% 100%;
+	width:90%;
+    COLOR:WHITE !important
+}
+		
+	
+#DAL_MARE .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/dal-mare.jpg);
+    background-size: 100% 100%;
+	width:90%;
+    COLOR:WHITE !important
+}
+	#DESSERT .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/dessert.jpg);
+    background-size: 100% 100%;
+		width:90%;
+    COLOR:WHITE !important
+}
+	
+	#PASTA_FRESCA .eltdf-st-title,#DAL_MARE .eltdf-st-title,#SUSHI_NIGHIRI .eltdf-st-title,#DALLA_TERRA .eltdf-st-title ,#CRUDITÈ .eltdf-st-title {
+		color:white !important;
+	} 
+	
+	
+		#GUNKAN .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/gunkan.jpg);
+    background-size: 100% 100%;
+			width:90%;
+			COLOR:WHITE !important
+    
+}
+			#HOSOMAKI .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/hosomaki.jpg);
+    background-size: 100% 100%;
+				width:90%;
+					COLOR:WHITE !important
+}
+				#INSALATE .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/insalate.jpg);
+    background-size: 100% 100%;
+					width:90%;
+						COLOR:WHITE !important
+}
+	
+	
+	
+#RISO .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/riso.jpg);
+    background-size: 100% 100%;
+	width:90%;
+		COLOR:WHITE !important
+    
+}
+	
+	
+#URAMAKI  .eltdf-section-title-holder {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/uramaki.jpg);
+    background-size: 100% 100%;
+    background-position-y: center;
+	width:90%;
+		COLOR:WHITE !important
+}
+		
+#ZUPPE .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/zuppe.jpg);
+    background-size: 100% 100%;
+    background-position-y: center;
+	width:90%;
+		COLOR:WHITE !important
+}
+	
+		
+	#RISO  .eltdf-section-title-holder {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/riso.jpg);
+    background-size: 100% 100%;
+    background-position-y: center;
+		width:90%;
+			COLOR:WHITE !important
+}
+	
+	
+	#TEMAKI .eltdf-section-title-holder   {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/temaki.jpg);
+    background-size: 100% 100%;
+    background-position-y: center;
+		width:90%;
+			COLOR:WHITE !important
+}
+#TEMPURA .eltdf-section-title-holder {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/tempura.jpg);
+    background-size: 100% 100%;
+    background-position-y: center;
+	width:90%;
+		COLOR:WHITE !important
+}
+	
+	ul.products>.product .eltdf-pl-inner .eltdf-pl-text {
+		
+		position:relative;
+		
+	}
+	
+	.eltdf-title-holder {
+		display:none;
+	}
+	
+	.widget_shopping_cart {
+		background-color:#c29a5d;
+		min-height:100px
+	}
+	#categorie_prodotti_delivery .eltdf-st-title {
+		color:white !important
+	}
+	
+	.eltdf-st-title {
+		font-size:35px !important;
+		text-align:center;
+	}
+
+	.woocommerce .columns-3 {
+	display:none ;
+		opacity: 0;
+		visibility: hidden;
+		height:0 ;
+	
+				transition: opacity 2s, visibility 2s, height : 4s;
+}
+	.product, .type-product, .columns-3 li,.eltdf-pl-inner,.eltdf-pl-text-wrapper,span,.woocommerce-Price-amount, .price , .amount {
+		height:inherit;
+	}
+	.wpb_wrapper {background:white}
+	.contentclosed {
+	  /* display:block !important ;
+		opacity: 1;
+		visibility: visible;*/
+		
+		transition: opacity 2s, visibility 2s, height : 4s;
+}
+	.eltdf-st-title {
+		margin-bottom:3% !important
+	}
+	
+	.eltdf-woo-normal-space ul.products {
+		width:105%
+	}
+	.eltdf-product-list-title {
+		line-height:1em
+	}
+	.product-type-simple{
+		margin-bottom:0 !important;
+	}
+}
+
+
+#eltdf-back-to-top {
+	right: -70px;
+	bottom: 90px;
+}
+
+
+.eltdf-social-sidebar-holder {
+display:block !important;	
+}
+.widget_product_categories {
+	z-index:130
+}
+.widget_shopping_cart {
+	z-index:999
+}
+
+.widget.widget_text img {
+    display: inline;
+}
+	
+.icon {
+    display: inline-block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url('http://s27.postimg.org/kpk2ov1z3/arrows.png');
+    width: 16px;
+    height: 16px;
+    background-position: 0px 0px;
+}
+.icon-open {
+    background-position: 0px -16px;
+}
+
+.eltdf-st-title {
+	   cursor: pointer;
+    margin: 0;
+}
+
+}
+.page-id-5269 .eltdf-position-right  {
+	display:none
+}
+
+@media only screen and (max-width: 600px){
+	#CRUDITÈ .eltdf-st-title , #DALLA_TERRA .eltdf-st-title , #PASTA_FRESCA .eltdf-st-title
+	{
+		color:white !important;
+	}}
+
+#middle_header 
+{
+	padding-left:12% !important
+}
+
+.eltdf-main-menu > ul > li.eltdf-active-item > a > .item_outer .item_text::after,
+.eltdf-main-menu > ul > li:hover > a > .item_outer .item_text::after{
+	display: none !important;
+	color: #c29a5d !important;
+}
+
+.eltdf-mobile-header .eltdf-mobile-nav ul li a > span::after,
+.eltdf-main-menu > ul > li > a > span.item_outer .item_text::after{
+	display: none;
+}
+
+.page-id-5269 .cat-parent .children 
+{
+	display:none;
+}
+#COMPOSIZIONI
+{
+MARGIN-TOp:10%;	
+}
+
+@media only screen and (max-width: 600px){
+	
+	
+	
+	
+	
+		.colummns-3 .product-type-simple
+	{
+		max-height:250px;
+	}
+
+	.eltdf-woo-normal-space ul.products>.product {
+		padding: 0 13px
+	}
+	
+	body>div.eltdf-wrapper>div.eltdf-wrapper-inner>div.eltdf-content>div>div.eltdf-title-holder.eltdf-standard-type.eltdf-title-va-window-top, body>div.eltdf-wrapper>div.eltdf-wrapper-inner>div.eltdf-content>div>div.eltdf-container.eltdf-default-page-template>div>div>div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9>aside>div.widget.woocommerce.widget_product_categories, body>div.eltdf-wrapper>div.eltdf-wrapper-inner>div.eltdf-content>div>div.eltdf-container.eltdf-default-page-template>div>div>div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9>aside>div.widget.woocommerce.widget_shopping_cart
+	
+	{
+		top:90% !important;
+		max-height:80px !important;
+		min-height: 50pox !important;
+	}
+ a.added_to_cart.wc-forward 
+	{
+		width:100% !important
+	}
+	
+	.eltdf-onsale {
+		z-index:1 !important
+	}
+	#CARPACCIO .woocommerce .columns-3
+	{
+		width:100%
+	}
+	#eltdf-back-to-top 
+	{
+		margin-right: -5%;
+    margin-bottom: -5%;
+	}
+	#CRUDITÈ .eltdf-st-title , #DALLA_TERRA .eltdf-st-title , #PASTA_FRESCA .eltdf-st-title
+	{
+		color:white !important;
+	}
+	#categorie_prodotti_delivery > div > div > div:nth-child(6) {
+		height:0;
+	}	
+		#URAMAKI .products {
+		display:none
+	}
+	#ZUPPE .products {
+		display:none
+	}
+		#TEMPURA .products {
+		display:none
+	}
+	#SUSHI_NIGHIRI .products {
+display:none	
+	}
+		#CHIRASHI .products {
+display:none	
+	}
+			#TEMAKI .products {
+display:none	
+	}
+
+#bgwhite .wpb_wrapper {
+    background: transparent!important;
+}
+}
+
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-title-holder.eltdf-standard-type.eltdf-title-va-window-top {
+
+    background-size: 90% 100%;	
+}
+
+
+
+.page-id-5269 .eltdf-position-right  {
+	display:none
+}
+#picture_header {
+	top:600px;
+}
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9 > aside > div.widget.woocommerce.widget_shopping_cart {
+	margin-right:1% !important
+}
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9 > aside > div.widget.woocommerce.widget_shopping_cart > div.widget_shopping_cart_content > p.woocommerce-mini-cart__buttons.buttons > a:nth-child(1),body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9 > aside > div.widget.woocommerce.widget_shopping_cart > div.widget_shopping_cart_content > p.woocommerce-mini-cart__buttons.buttons > a:nth-child(2) , .coupon .button, .wc-forward , .actions .button{
+	font-family :'Maleah' !important;
+	font-weight: 600 !important;
+}
+
+
+.page-id-5269 .eltdf-page-header .eltdf-vertical-align-containers, .page-id-5269 .eltdf-top-bar .eltdf-vertical-align-containers {
+	padding-left:8.3%;
+	padding-right:8.3%;
+}
+#categorie_prodotti_delivery  
+{
+	width:75%
+}
+
+@media only screen and (max-width: 600px) {
+	#categorie_prodotti_delivery  
+{
+	width:100%
+}
+	
+	.woocommerce-cart-form .product-quantity
+	{
+		width:100%;
+		
+	}
+
+	.woocommerce-cart-form 	.eltdf-quantity-buttons {
+		width:60% !important;
+	
+	}
+	
+	.woocommerce-cart-form 	.eltdf-quantity-buttons input {
+		border-top:0 !important;
+		border-bottom:0 !important;
+	
+	}
+		.woocommerce-cart-form 	.eltdf-quantity-buttons  {
+border:1px solid black !important;
+	
+	}
+	#coupon_code ,.coupon .button {
+		width:100% !important;
+	}
+	.woocommerce-cart-form .button, .woocommerce .checkout-button {
+		width:100% !important
+	}
+	
+	
+ 	#CRUDITÈ .eltdf-st-inner {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/uramaki.jpg);
+    background-size: 100% 100%;
+    background-position-y: center;
+		width:95%
+}
+	#CRUDITÈ .eltdf-st-title:first-child {
+		COLOR:WHITE !important
+	}
+		#DALLA_TERRA .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/dalla-terra.jpg);
+    background-size: 100% 100%;
+	width:90%;
+    COLOR:WHITE !important
+}
+		
+			#PASTA_FRESCA .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/pasta-fresca-in-padella.jpg);
+    background-size: 100% 100%;
+	width:90%;
+    COLOR:WHITE !important
+}
+				#SUSHI_NIGHIRI .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/sushi-nighiri.jpg);
+    background-size: 100% 100%;
+	width:90%;
+    COLOR:WHITE !important
+}
+	
+#DAL_MARE .eltdf-section-title-holder  {
+	text-align: center;
+    background: url(https://www.izumilano.com/wp-content/uploads/2020/05/dal-mare.jpg);
+    background-size: 100% 100%;
+	width:90%;
+    COLOR:WHITE !important
+}
+	
+	
+	
+	
+
+	
+}
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9 > aside > div.widget.woocommerce.widget_product_categories
+
+{
+top:75% !important;	
+	margin-left: 3%;
+} 
+.eltdf-woo-pl-info-below-image ul.products>.product .added_to_cart, .eltdf-woo-pl-info-below-image ul.products>.product .button{
+	font-family : 'Brooklyn' !important
+}
+
+
+#middle_header
+{
+	padding-right:12% !important
+}
+
+#picture_header .wpb_wrapper :nth-child(2)
+{
+	text-align:left !important
+}
+#picture_header .wpb_wrapper :nth-child(4)
+{
+	padding-left:6%
+}
+
+ul.products>.product .eltdf-pl-inner, ul.products>.product .eltdf-pl-inner .eltdf-pl-image
+
+{
+	max-width: 300px !important;
+	    max-height: 300px !important;
+}
+@media only screen and (min-width: 600px){
+.eltdf-product-list-title::after
+{
+	content: '';
+	display: block;
+  position: absolute;
+	width:75%;
+	top:0px;
+	margin-left: 12%;
+	border-bottom : 1px solid black;
+	z-index:9999999;
+	height: 2px;
+	
+}
+
+ul.products>.product .price
+{
+	border:0
+}
+ul.products>.product .eltdf-pl-text-wrapper {
+	margin-top:0
+}
+	
+	
+.button.checkout.wc-forward:hover,.button.wc-forward:hover
+{
+	border-color:#C29A5D !important;
+	background:#C29A5D !important;
+	color: #fff !important;
+}
+
+.button.checkout.wc-forward, .button.wc-forward
+{
+padding:14px 34px !important;
+	border: 1px solid black !important
+}
+
+}
+@media only screen and (max-width: 600px){
+	
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div > div > form > table > tbody > tr:nth-child(3) > td > button:hover,body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div > div > form > table > tbody > tr:nth-child(3) > td > div > button:hover,body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div > div > form > table > tbody > tr:nth-child(3) > td > button,body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div > div > div.cart-collaterals > div > div > a
+	{
+		
+			border-color:#C29A5D !important;
+	background:#C29A5D !important;
+	color: #fff !important;
+	}
+.vc_row-fluid	
+	{
+	//	max-height:80px
+	}
+	.vc_custom_1596367473493
+	{
+		//margin-top:0 !important
+	}
+	#COMPOSIZIONI {
+     MARGIN-TOp: 0;
+}
+	#DALLA_TERRA
+	{
+		margin-top: -15px;
+	}
+	#TARTARE
+	{
+		margin-top: -50px;
+	}
+	.woocommerce-Price-amount .amount
+	{
+		font-size: 14px;
+    padding-left: 3px;
+	}
+	.woocommerce-mini-cart__total 
+	{
+		
+    FLOAT: left;
+    width: 25%;
+    font-size: 12px;
+
+	}
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9 > aside > div.widget.woocommerce.widget_shopping_cart > div.widget_shopping_cart_content > p.woocommerce-mini-cart__buttons.buttons > a:nth-child(1)
+	{
+		    font-size: 11px;
+    width: 60% !important;
+    padding-left: 3% !important;
+    padding-right: 0 !important;
+	}
+	.button .checkout .wc-forward
+	{
+		font-size:9px;
+		width:60%
+	}
+	body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container.eltdf-default-page-template > div > div > div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9 > aside > div.widget.woocommerce.widget_shopping_cart > div.widget_shopping_cart_content > p.woocommerce-mini-cart__buttons.buttons > a.button.checkout.wc-forward
+	{
+		width: 30% !important;
+    float: right;
+		font-size: 11px;
+	}
+	body>div.eltdf-wrapper>div.eltdf-wrapper-inner>div.eltdf-content>div>div.eltdf-container.eltdf-default-page-template>div>div>div.eltdf-sidebar-holder.eltdf-grid-col-3.eltdf-grid-col-pull-9>aside>div.widget.woocommerce.widget_shopping_cart
+	{
+		top:93% !important
+	}
+.eltdf-product-list-title::after
+{
+	content: '';
+	display: block;
+  position: absolute;
+	width:75%;
+	top:0px;
+	margin-left: 12%;
+	border-bottom : 1px solid black;
+	z-index:5;
+	height: 2px;
+	
+}
+
+ul.products>.product .price
+{
+	border:0
+}
+ul.products>.product .eltdf-pl-text-wrapper {
+	margin-top:0
+}
+	.eltdf-section-title-holder
+	{
+	z-index: 9;
+	}
+}
+.checkout, .wc-forward {
+	border-bottom:0 !important;
+	font-weight: 800 !important;
+}
+
+#woocommerce_widget_cart-5
+{
+	background:white;
+	padding:1%;
+	display:none;
+position: absolute !important;
+    top: 90% !important;
+    width: 500% !important;
+	max-width:200px !important;
+}
+
+#woocommerce_widget_cart-5 .remove
+{
+	left:-10% ;
+	right:unset;
+}
+
+#woocommerce_widget_cart-5 > div > ul ,#custom_html-3 
+{
+	display:none;
+	
+}
+.widgettitle , #custom_html-3
+{
+	cursor:pointer;
+}
+.widgettitle:hover
+{
+	cursor:pointer;
+	background:#c29a5d !important;
+	color:white !important
+}
+#woocommerce_widget_cart-5 .widgettitle
+{
+	margin-bottom:1px
+}
+
+#woocommerce_widget_cart-5 .woocommerce-mini-cart__total 
+{
+	margin-top:1px
+}
+
+#woocommerce_widget_cart-5 .wc-forward
+{
+	padding-top:1px !important;
+	padding-bottom:1px !important;
+}
+
+
+#custom_html-3
+{
+	position: absolute;
+    left: -3250%;
+    top: 110%;
+}
+
+
+body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-container > div > div.product.type-product.status-publish
+{
+	width:70% !important
+}
+.product-template-default .eltdf-container-inner {
+	padding-top:0 !important
+}
+
+.product-template-default .woocommerce-product-gallery__wrapper img {
+max-height:500px 	;
+	max-width:500px 	;
+}
+
+
+ 
+.product-template-default figure > div:nth-child(2) > a > img,.product-template-default figure > div:nth-child(3) > a > img,.product-template-default figure > div:nth-child(4) > a > img, .woocommerce-product-rating
+{ 
+	display:none !important
+}
+.product-template-default .eltdf-single-product-summary
+{
+	padding-left:0;
+	
+}
+.product-template-default .woocommerce-Price-amount 
+{
+	font-family:'Maleah'!important
+}
+.product-template-default  .eltdf-quantity-input, .product-template-default  
+{
+	border:1px solid black !important
+}
+
+.product-template-default .eltdf-quantity-plus,.eltdf-quantity-minus
+
+	{
+	border-top:1px solid black !important;
+		border-right:1px solid black !important;
+		border-top:1px solid black !important;
+		color:#c29a5d !important;
+		font-weight:600
+}
+.product-template-default .eltdf-quantity-minus
+
+	{
+
+		border-bottom:1px solid black !important
+}
+
+
+.product-template-default .single_add_to_cart_button
+
+{
+	font-family:'Brooklyn'!important;
+	font-weight:800;
+	color: #c29a5d !important;
+}
+
+
+.product_meta
+{
+	display:none
+}
+
+.product-template-default  .eltdf-single-product-title
+{
+	
+}
+
+.related .products .eltdf-pl-text-inner,.related .products .eltdf-pl-text-inner:hover
+{
+	position:absolute !important;
+	top:unset !important
+	transition :none !important
+}
+.related .products .eltdf-pl-text-wrapper
+{
+margin-top: -20% !important;
+	font-size:15px !important;
+	font-weight:600 !important
+}
+.related .products .eltdf-product-list-title
+{
+	font-size:20px !important
+}
+.related .products .woocommerce-Price-amount
+{
+	font-weight:600
+}
+
+.related .products .eltdf-pl-text-wrapper
+{
+	margin-top: 4% !important
+}
+.related ul.products>.product .eltdf-pl-inner .eltdf-pl-text
+{
+	transition:unset;
+	top:90% !important;
+	position: absolute;
+}
+.related ul.products>.product .eltdf-pl-inner .eltdf-pl-text:hover 
+{
+	color:black !important
+}
+.related .eltdf-pl-text:hover
+{
+	transition:unset;
+}
+
+.related .eltdf-pl-text
+{
+	transition:unset;
+	height:30px
+}
+.product-template-default .single_add_to_cart_button:hover {
+	color:white !important;
+	background-color: #c29a5d !important
+}
+.product-template-default .reviews_tab 
+{display:none !important}
+.product-template-default .woocommerce-product-attributes-item--dimensions ,.woocommerce-product-attributes-item__label
+{
+	display:none
+}
+.woocommerce-product-attributes-item__value, .product-template-default,
+{
+	font-family: 'Maleah' !important;
+	font-weight:600
+}
+
+.torna_indietro
+{
+	font-family: 'Maleah' !important;
+	background:white;
+	border:unset;
+	font-size:35;
+min-width: 300px!important;
+	position: absolute;
+	width: 100% !important;
+	cursor: pointer
+}
+
+
+@media only screen and (max-width: 1800px){
+	 #custom_html-3
+	{
+		left: -2890%;
+	}
+}
+	
+@media only screen and (max-width: 600px){
+		.woocommerce.columns-3>.products>.product
+	{
+		max-height:250px;
+	
+	}
+	.eltdf-out-of-stock
+	{z-index:1}
+	.eltdf-quantity-input
+	{
+		    margin: 0 !important;
+    border-bottom: 0 !important;
+    line-height: unset;
+    width: 60% !important;
+    border: 0 !important;
+	}
+	.eltdf-quantity-buttons
+	{
+		border:0 !important;
+	}
+	.eltdf-quantity-minus
+	{
+		border:0 !important;
+		border-right: 0 !important;
+		
+	}
+	.eltdf-quantity-plus
+	{
+		border-bottom:1px black !important
+	}
+	.input-text .eltdf-quantity-buttons 
+	{
+		border:0 solid black !important
+	}
+	.icon_plus
+	{
+		border-bottom: 1px solid black !important;
+	}
+	.eltdf-quantity-minus 
+	{
+		border-top:1px solid black !important;
+		border-left:1px solid black !important;
+	}
+	body > div.eltdf-wrapper > div.eltdf-wrapper-inner > div.eltdf-content > div > div.eltdf-title-holder.eltdf-standard-type.eltdf-title-va-header-bottom > div 
+	{
+		height: 110px !important;
+	}
+	.woocommerce-message a
+	{
+		border-bottom: 1px solid black !important;
+    width: 100% !important;
+	}
+	.woocommerce-message a:hover
+	{
+		border: 1px solid #C29A5D !important;
+			background:#C29A5D !important;
+	color: #fff !important;
+	}
+	.eltdf-accordion-mark .icon_plus
+	{
+		border-bottom:0 !important
+	}
+	.related .eltdf-product-list-title::after
+	{
+		top:-5px
+	}
+	
+	
+}
+.eltdf-main-menu > ul > li.eltdf-active-item > a > .item_outer .item_text::after,
+.eltdf-main-menu > ul > li:hover > a > .item_outer .item_text::after{
+	display: none !important;
+	color: #c29a5d !important;
+
+}
+
+.vc_row.wpb_row.vc_row-fluid.vc_custom_1594732917551{
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.eltdf-main-menu > ul > li.current-menu-item a,
+.eltdf-main-menu > ul > li:hover > a{
+	color: #c29a5d !important;
+}
+
+.eltdf-main-menu > ul > li > a > span.item_outer .item_text::after{
+	display: none;
+}
+
+
+/*PLUGIN MENU */
+.content-slide-category-izumilano,
+.content-menu-izumilano{
+	max-width: 1200px;
+	margin: 0 auto;
+	
+}
+
+.item-category-menu{
+	box-sizing: border-box;
+	padding: 5px;
+	height: auto
+}
+.content-header-menu-izumilano{
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 0;
+	overflow: hidden;
+}
+
+.content-header-menu-izumilano.open{
+	height: auto;
+	overflow: visible;
+}
+
+.button-slide-category-menu {
+	width: 40px;
+	height: 40px;
+	display: block;
+	padding: 2px;
+	border: none;
+	border-radius: 50%;
+	background: #c29a5d;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -115%);
+	z-index: 999;
+	cursor: pointer;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+	outline: none;
+}
+
+.button-slide-category-menu i{
+	font-size: 20px;
+	text-align: center;
+	color: #000;
+}
+
+.button-slide-category-menu.next{
+	right: -15px;
+}
+
+.button-slide-category-menu.prev{
+	left: -15px;
+}
+
+
+
+.item-category-menu div{
+	background: grey;
+	height: 200px;
+	position: relative;
+	display: block;
+	cursor:pointer;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.item-category-menu{
+	overflow: hidden;
+}
+
+
+.item-category-menu h4{
+	width: 100%;
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-family: 'Maleah' !important;
+    color:  #3B2928 !important;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 5px 5px 10px;
+	text-shadow: none;
+	background: #fff;
+	z-index: 999;
+	font-weight: 600 !important;
+}
+
+.menu-category-izumilano{
+	display: none;
+	padding: 20px;
+}
+
+.menu-category-izumilano.current{
+	display: block;
+	
+}
+
+.button-slide-category-menu{
+	display: inline-block !important;
+}
+
+.button-slide-category-menu.mobile-action-btn-izu{
+	display: none !important;
+}
+
+@media screen and (max-width: 800px) {
+	.button-slide-category-menu{
+		display: none !important;
+	}
+	
+	.button-slide-category-menu.mobile-action-btn-izu{
+		display: inline-block !important;
+	}
+}
+
+@media screen and (max-width: 500px) {
+  .menu-category-izumilano{
+    padding: 0;
+  }
+}
+
+.img-category-izumilano{
+	width: 100%;
+	height: 300px;
+	background: gray;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.img-category-izumilano::before{
+	content:'';
+	display: block; 
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	background: #c29a5d;
+	opacity: .2;
+}
+
+.element-menu-izumilano{
+	max-width: 860px;
+	margin: 0 auto;
+	padding:  10px 25px;
+	border-bottom: 1px solid #e1e1e1;
+	position: relative;
+	padding-right: 70px;
+}
+
+.img-category-izumilano:hover::before{
+	opacity: .5;
+}
+
+
+
+
+h3.titlte-category-izumilano{
+	text-align: center;
+	font-size: 55px !important;
+	line-height: 60px;
+	margin: 0 auto;
+	
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-family: 'Maleah' !important;
+    color: #fff !important;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+	z-index: 9999;
+}
+
+.subtitlte-category-izumilano{
+	display: block;
+	text-align: center;
+	font-size: 30px !important;
+	line-height: 30px;
+	margin: 0 auto;
+	
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-family: 'Maleah' !important;
+    color: #fff !important;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+	z-index: 9999;
+}
+
+
+@media screen and (max-width: 800px) {
+  .menu-category-izumilano{
+    padding: 0;
+  }
+	
+	.img-category-izumilano{
+		height: auto;
+		background: none !important;
+		margin-top: 50px;
+	}
+	
+	.img-category-izumilano::before{
+		display: none;
+	}
+	
+	h3.titlte-category-izumilano{
+		text-align: center;
+		font-size: 30px !important;
+		line-height: 35px;
+		margin: 0 auto;
+	
+		position: static;
+		bottom: auto;
+		left: auto;
+		transform: none;
+		color: #3B2928 !important;
+		text-shadow: none;
+		z-index: 9;
+	}
+	
+	.subtitlte-category-izumilano{
+		display: block;
+		text-align: center;
+		font-size: 20px !important;
+		line-height: 30px;
+		margin: 0 auto;
+	
+		position: static;
+		bottom: auto;
+		left: auto;
+		transform: none;
+		color: #3B2928 !important;
+		text-shadow: none;
+		z-index: 9;
+	}
+}
+
+.close-menu-izu{
+	width: auto;
+	height: 30px;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	border-radius: 2px;
+	background: none;
+	font-size: 14px;
+	border-top: 1px solid #3B2928;
+	color:  #3B2928 !important;
+	cursor: pointer;
+}
+
+.element-menu-izumilano ul{
+	margin: 0 auto;
+	padding: 0;
+}
+
+.element-menu-izumilano ul li{
+	list-style-type: none;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 400;
+	letter-spacing: .01em;
+}
+
+.element-menu-izumilano .price{
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translate(0, -50%);
+	border: none;
+}
+
+.element-menu-izumilano h4{
+	margin: 0 auto;
+	font-family: 'Maleah' !important;
+	color: #c29a5d !important;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 0;
+	font-weight: bold !important;
+	letter-spacing: .01em;
+}
+
+@media screen and (max-width: 500px) {
+  .element-menu-izumilano {
+    padding-left: 0;
+  }
+}
+
+.content-card-menu-izumilano-preload{
+	display: none;
+}
+
+.content-card-menu-izumilano-preload.open{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 15px 0;
+	
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: flex-start;
+	-webkit-align-items: start;
+	-webkit-justify-content: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.card-category-menu{
+	width: 300px;
+	height: 230px;
+	margin: 20px 5px;
+	background: grey;
+	position: relative;
+	cursor:pointer;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	border-bottom: 2px solid #c49c5e;
+	overflow: hidden;
+}
+
+.card-category-menu:hover{
+	transform: scale(1.05);
+	z-index: 9999;
+	transition: transform .5s;
+}
+
+
+
+.close-menu-izu{
+	display: none;
+}
+
+.close-menu-izu.open{
+	display: block;
+}
+
+
+.content-menu-izumilano{
+	padding-bottom: 50px;
+	border-bottom: 1px solid #3B2928;
+}
+
+.card-category-menu h4{
+	width: 100%;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-family: 'Maleah' !important;
+    color:  #3B2928 !important;
+	background: #fff;
+	font-size: 16px;
+	line-height: 16px;
+	padding: 12px 5px;
+	text-align: center;
+	margin: 0 auto;
+	font-weight: 600 !important;
+}
+
+
+.content-menu-pdf-izumilano{
+	max-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+
+.content-menu-pdf-izumilano i{
+	display: block;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 20px;
+	color: #c49c5e;
+}
+
+.content-menu-pdf-izumilano a span{
+	display: block;
+	margin: 0 auto;
+	color:  #3B2928 !important;
+	font-size: 18px;
+	line-height: 20px;
+}

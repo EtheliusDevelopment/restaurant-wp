@@ -1,0 +1,195 @@
+/* ==========================================================================
+   Reservation  styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Reservation form shortcode styles - begin
+   ========================================================================== */
+.eltdf-rf-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /** Light Skin **/
+}
+
+.eltdf-rf-holder .eltdf-rf-col-holder {
+  float: left;
+  width: 28.66%;
+  box-sizing: border-box;
+  padding-right: 5px;
+}
+
+.eltdf-rf-holder .eltdf-rf-col-holder .eltdf-rf-field-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+.eltdf-rf-holder .eltdf-rf-col-holder .eltdf-rf-field-holder select,
+.eltdf-rf-holder .eltdf-rf-col-holder .eltdf-rf-field-holder input[type=text] {
+  display: block;
+  width: 100%;
+  padding: 15px 55px 15px 20px;
+  margin: 0;
+  border: 1px solid #111111;
+  border-radius: 0;
+  outline: none;
+  color: #1f1f1f;
+  background-color: transparent;
+  font-family: "Bebas";
+  font-size: 12px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  box-sizing: border-box;
+}
+
+.eltdf-rf-holder .eltdf-rf-col-holder .eltdf-rf-field-holder select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-overflow: '';
+  cursor: pointer;
+}
+
+.eltdf-rf-holder .eltdf-rf-col-holder .eltdf-rf-field-holder select::-ms-expand {
+  display: none;
+}
+
+.eltdf-rf-holder .eltdf-rf-col-holder .eltdf-rf-field-holder .eltdf-rf-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 52px;
+  height: 100%;
+  color: #111111;
+  font-size: 24px;
+  line-height: 52px;
+  text-align: center;
+  border-left: 1px solid #111111;
+}
+
+.eltdf-rf-holder .eltdf-rf-col-holder .eltdf-rf-field-holder .eltdf-rf-icon span {
+  position: relative;
+  vertical-align: middle;
+  top: -1px;
+}
+
+.eltdf-rf-holder .eltdf-rf-btn-holder {
+  margin: 0;
+  width: 14%;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+
+.eltdf-rf-holder .eltdf-btn {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  padding: 12px 34px !important;
+}
+
+.eltdf-rf-holder .eltdf-rf-copyright {
+  margin: 20px 0 0;
+  font-size: 13px;
+  text-align: center;
+  color: #a6a6a6;
+  letter-spacing: 0;
+}
+
+.eltdf-rf-holder.eltdf-rf-light .eltdf-rf-col-holder .eltdf-rf-field-holder select,
+.eltdf-rf-holder.eltdf-rf-light .eltdf-rf-col-holder .eltdf-rf-field-holder input[type=text] {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.eltdf-rf-holder.eltdf-rf-light .eltdf-rf-col-holder .eltdf-rf-field-holder select option {
+  background-color: #111111;
+}
+
+.eltdf-rf-holder.eltdf-rf-light .eltdf-rf-col-holder .eltdf-rf-field-holder .eltdf-rf-icon {
+  color: #fff;
+  border-left-color: #fff;
+}
+
+.eltdf-rf-holder.eltdf-rf-light .eltdf-rf-col-holder.eltdf-rf-btn-holder button[type=submit] {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.eltdf-rf-holder.eltdf-rf-light .eltdf-rf-col-holder.eltdf-rf-btn-holder button[type=submit]:hover {
+  color: #111111 !important;
+  background-color: #fff !important;
+  border-color: #fff !important;
+}
+
+.eltdf-rf-holder.eltdf-rf-light .eltdf-rf-copyright {
+  color: #b2b2b2;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Reservation form shortcode styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Reservation form responsive shortcode styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .eltdf-rf-holder .eltdf-rf-col-holder {
+    width: 33.33%;
+  }
+  .eltdf-rf-holder .eltdf-rf-col-holder.eltdf-rf-btn-holder {
+    float: none;
+    width: auto;
+    margin: 75px auto 0;
+    text-align: center;
+  }
+  .eltdf-rf-holder .eltdf-rf-col-holder.eltdf-rf-btn-holder .eltdf-btn {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 20px auto 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .eltdf-rf-holder:not(.eltdf-rf-button-bellow) .eltdf-rf-col-holder.eltdf-rf-btn-holder {
+    width: 33.33%;
+  }
+  .eltdf-rf-holder:not(.eltdf-rf-button-bellow) .eltdf-rf-col-holder.eltdf-rf-btn-holder .eltdf-btn {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-rf-holder:not(.eltdf-rf-button-bellow) .eltdf-rf-col-holder, .eltdf-rf-holder.eltdf-rf-button-bellow .eltdf-rf-col-holder {
+    float: none;
+    width: 100%;
+    padding: 0 0 20px;
+  }
+  .eltdf-rf-holder:not(.eltdf-rf-button-bellow) .eltdf-rf-col-holder.eltdf-rf-btn-holder, .eltdf-rf-holder.eltdf-rf-button-bellow .eltdf-rf-col-holder.eltdf-rf-btn-holder {
+    width: 100%;
+    margin: 0;
+  }
+  .eltdf-rf-holder.eltdf-rf-button-bellow .eltdf-rf-col-holder {
+    margin: 15px 0 0;
+  }
+}
+
+/* ==========================================================================
+   Reservation form responsive shortcode styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Reservation styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=reservation-map.css.map */

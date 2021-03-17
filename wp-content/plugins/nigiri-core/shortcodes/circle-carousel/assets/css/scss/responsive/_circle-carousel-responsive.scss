@@ -1,0 +1,57 @@
+/* ==========================================================================
+# Circle Carousel responsive style - begin
+========================================================================== */
+@include laptop-landscape-large {
+	
+	.eltdf-circle-carousel {
+		
+		.eltdf-circle-carousel-slider {
+			width: 80%;
+			margin: 0 auto;
+			display: block;
+		}
+		
+		.eltdf-circle-carousel-navigation {
+			
+			> * {
+				
+				&.eltdf-prev-icon-holder {
+					left: 0;
+				}
+				
+				&.eltdf-next-icon-holder {
+					right: 0;
+				}
+			}
+		}
+	}
+}
+
+@include laptop-landscape-medium {
+	
+	.eltdf-circle-carousel {
+		
+		.eltdf-circle-carousel-slider {
+			width: 70%;
+		}
+	}
+}
+
+@include ipad-landscape {
+	
+	.eltdf-circle-carousel {
+		visibility: visible;
+		
+		.eltdf-circle-carousel-slider {
+			width: 60%;
+		}
+		
+		.eltdf-circle-carousel-navigation {
+			display: none;
+		}
+	}
+}
+
+/* ==========================================================================
+# Circle Carousel responsive style - end
+========================================================================== */

@@ -1,0 +1,1 @@
+<input type="submit" name="<?php echo esc_attr($input_name); ?>" value="<?php echo esc_attr($text); ?>" <?php nigiri_elated_inline_style($button_styles); ?> <?php nigiri_elated_class_attribute($button_classes); ?> <?php echo nigiri_elated_get_inline_attrs($button_data); ?> <?php echo nigiri_elated_get_inline_attrs($button_custom_attrs); ?> />

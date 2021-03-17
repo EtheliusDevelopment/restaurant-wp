@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+
+.eltdf-section-title-holder {
+    @include eltdfRelativeHolderLayout();
+	  box-sizing: border-box;
+	
+    .eltdf-st-title {
+	    display: block;
+      margin: 0;
+	    
+	    .eltdf-st-title-bold {
+		    font-weight: 700;
+	    }
+	    
+	    .eltdf-st-title-light {
+		    font-weight: 300;
+	    }
+    }
+    
+    .eltdf-st-subtitle {
+      display: block;
+      margin: 0 0 2px;
+    }
+
+    .eltdf-st-text {
+  	  display: block;
+      margin: 22px 0 0;
+      width: 100%;
+    }
+
+    div.eltdf-st-text {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .eltdf-section-title-image {
+      margin-bottom: 7px;
+
+      img {
+        display: block;
+      }
+    }
+
+    .eltdf-signature-image {
+      position: relative;
+      top: -5px;
+
+      img {
+        display: block;
+      }
+    }
+
+    &.eltdf-position-center {
+      .eltdf-section-title-image,
+      .eltdf-signature-image {
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    &.eltdf-position-right {
+      .eltdf-section-title-image,
+      .eltdf-signature-image {
+        img {
+          margin-left: 100%;
+          @include eltdfTransform(translate(-100%));
+        }
+      }
+    }
+
+    .eltdf-section-title-button {
+      margin: 30px 0 0;
+    }
+}
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+
+

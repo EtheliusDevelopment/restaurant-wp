@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+
+.eltdf-vertical-image-info-holder {
+    @include eltdfRelativeHolderLayout();
+    text-align: center;
+	
+	&.eltdf-appear-animation {
+		.eltdf-vii-text-holder {
+			&:before {
+				width: 0;
+			}
+		}
+		
+		&.eltdf-vii-appear {
+			
+			.eltdf-vii-text-holder {
+				&:before {
+					width: 100%;
+				}
+			}
+		}
+	}
+	
+	
+	.eltdf-vii-image {
+		@include eltdfRelativeHolderLayout();
+		padding: 0 0 140px;
+		
+		img {
+			position: relative;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	
+	.eltdf-vii-text-holder {
+		@include eltdfRelativeHolderLayout();
+		//border-top: 1px solid $default-heading-color;
+		padding: 32px 0 0;
+		
+		&:before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: $default-heading-color;
+			@include eltdfTransition(width 1s ease .15s);
+		}
+	}
+
+	.eltdf-vii-title-image {
+		@include eltdfRelativeHolderLayout();
+
+		img {
+			position: relative;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	
+	.eltdf-vii-title {
+		margin: 10px 0 0;
+	}
+	
+	.eltdf-vii-text {
+		margin: 5px 0 0;
+	}
+
+	&.eltdf-vertical-image-bottom {
+		.eltdf-vii-image {
+			padding: 130px 0 0;
+			
+			@include ipad-portrait {
+				padding-top: 55px;
+			}
+		}
+	}
+
+	&.eltdf-disable-top-separator {
+		.eltdf-vii-text-holder {
+			&:before {
+				display: none;
+			}
+		}
+	}
+	
+}
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */

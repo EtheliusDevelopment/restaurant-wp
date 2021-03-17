@@ -1,0 +1,16 @@
+[27-Jul-2020 09:22:15 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/izumilano/public_html/wp-content/themes/nigiri-child/functions.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/izumilano/public_html/wp-content/themes/nigiri-child/functions.php on line 12
+[27-Jul-2020 09:24:32 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/izumilano/public_html/wp-content/themes/nigiri-child/functions.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/izumilano/public_html/wp-content/themes/nigiri-child/functions.php on line 12
+[27-Jul-2020 09:25:34 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/izumilano/public_html/wp-content/themes/nigiri-child/functions.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/izumilano/public_html/wp-content/themes/nigiri-child/functions.php on line 12
+[27-Jul-2020 09:33:18 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/izumilano/public_html/wp-content/themes/nigiri-child/functions.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/izumilano/public_html/wp-content/themes/nigiri-child/functions.php on line 12

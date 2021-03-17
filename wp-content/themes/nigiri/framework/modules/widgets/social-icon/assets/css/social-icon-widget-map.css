@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Social Icon widget style - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+.eltdf-social-icon-widget-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.eltdf-footer-bottom-holder .eltdf-social-icon-widget-holder {
+  display: block;
+  padding: 33px 0;
+  line-height: 1;
+}
+
+.eltdf-social-icon-widget-holder .eltdf-social-icon-widget {
+  display: block;
+  color: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+}
+
+.eltdf-social-icon-widget-holder .eltdf-social-icon-widget:before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-social-icon-widget-holder .eltdf-social-icon-title {
+  display: block;
+  font-size: 12px;
+  line-height: 1em;
+  margin: 0 0 8px 0;
+}
+
+.eltdf-dark-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-social-icon-widget-holder {
+  color: #111111 !important;
+}
+
+.eltdf-dark-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-social-icon-widget-holder:hover {
+  color: #e43d34 !important;
+}
+
+.eltdf-light-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-social-icon-widget-holder {
+  color: #fff !important;
+}
+
+.eltdf-light-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-social-icon-widget-holder:hover {
+  color: #e43d34 !important;
+}
+
+/* ==========================================================================
+   Social Icon widget style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=social-icon-widget-map.css.map */

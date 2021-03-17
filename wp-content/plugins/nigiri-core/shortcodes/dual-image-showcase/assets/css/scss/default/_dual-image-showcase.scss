@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Dual Image Showcase shortcode style - begin
+   ========================================================================== */
+
+.eltdf-dual-image-showcase-holder {
+
+    @include eltdfTableLayout();
+
+    .eltdf-dis-inner-holder,
+    .eltdf-dis-text-holder  {
+    	@include eltdfTableCellLayout();
+    	width: 50%;
+    }
+
+    .eltdf-dis-inner-holder {
+        .eltdf-background-image-holder {
+            img {
+                display: block;
+            }
+        }
+    	.eltdf-foreground-image-holder {
+    		position: absolute;
+    		top: 38%;
+    		left: 28%;
+    	}
+    }
+
+    .eltdf-dis-text-holder {
+    	padding-right: 5.5%;
+    	box-sizing: border-box;
+
+    	.eltdf-dis-subtitle {
+		    margin: 0;
+    	}
+
+    	.eltdf-dis-title {
+    		margin: 1px 0 0;
+    	}
+
+    	.eltdf-dis-text {
+    		margin: 22px 0 30px;
+    	}
+
+    }
+
+
+    &.eltdf-dual-image-showcase-left {
+
+    	.eltdf-dis-text-holder {
+    		padding-left: 5.5%;
+    		padding-right: 0;
+    	}
+	}
+
+	&.eltdf-text-align-right {
+    	text-align: right;
+    }
+
+    &.eltdf-text-align-center {
+    	text-align: center;
+    }
+
+     &.eltdf-text-align-left {
+    	text-align: left;
+    }
+}
+/* ==========================================================================
+   Dual Image Showcase shortcode style - end
+   ========================================================================== */
